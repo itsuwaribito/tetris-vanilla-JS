@@ -1,11 +1,45 @@
 canvas {
     background-color: #8d8d8d;
     border: 1px solid black;
+    display: none;
 }
+
+.container {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+#inicio span {
+    cursor: pointer;
+    font-size: 26px;
+    text-align: center;
+}
+#inicio span:hover {
+    border-radius: 5px;
+    /* border: solid white 1px; */
+    padding: 5px 10px;
+    box-shadow: -2px 1px 10px 10px white;
+
+}
+
+
 
 body {
     display: grid;
     align-items: center;
     justify-content: center;
-
 }

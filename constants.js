@@ -1,48 +1,43 @@
 export const SHAPES = [
     [
-        [1,1],
-        [1,1]
+        [{state:1,color:'red'},{state:1,color:'red'}],
+        [{state:1,color:'red'},{state:1,color:'red'}]
     ],
     [
-        [0,1],
-        [0,1],
-        [1,1]
+        [{state:0,color:''},{state:1,color:'red'},{state:0,color:''}],
+        [{state:0,color:''},{state:1,color:'red'},{state:0,color:''}],
+        [{state:1,color:'red'},{state:1,color:'red'},{state:0,color:''}]
     ],
     [
-        [1,0],
-        [1,0],
-        [1,1]
+        [{state:1,color:'red'},{state:0,color:''},{state:0,color:''}],
+        [{state:1,color:'red'},{state:0,color:''},{state:0,color:''}],
+        [{state:1,color:'red'},{state:1,color:'red'},{state:0,color:''}]
     ],
     [
-        [1,1,0],
-        [0,1,1]
+        [{state:1,color:'red'},{state:1,color:'red'},{state:0,color:''}],
+        [{state:0,color:''},{state:1,color:'red'},{state:1,color:'red'}],
+        [{state:0,color:''},{state:0,color:''},{state:0,color:''}]
     ],
     [
-        [0,1,1],
-        [1,1,0]
+        [{state:0,color:''},{state:1,color:'red'},{state:1,color:'red'}],
+        [{state:1,color:'red'},{state:1,color:'red'},{state:0,color:''}],
+        [{state:0,color:''},{state:0,color:''},{state:0,color:''}]
     ],
     [
-        [1,1,1],
-        [0,1,0]
+        [{state:1,color:'red'},{state:1,color:'red'},{state:1,color:'red'}],
+        [{state:0,color:''},{state:1,color:'red'},{state:0,color:''}],
+        [{state:0,color:''},{state:0,color:''},{state:0,color:''}]
     ],
     [
-        [0,1,0],
-        [1,1,1],
-        [0,1,0]
-    ],
-    [
-        [1,1,1],
-        [0,0,1],
-        [0,0,1]
-    ],
-    [
-        [1],
-        [1],
-        [1],
-        [1]
+        [{state:0,color:''},{state:0,color:''},{state:0,color:''},{state:0,color:''}],
+        [{state:1,color:'red'},{state:1,color:'red'},{state:1,color:'red'},{state:1,color:'red'}],
+        [{state:0,color:''},{state:0,color:''},{state:0,color:''},{state:0,color:''}],
+        [{state:0,color:''},{state:0,color:''},{state:0,color:''},{state:0,color:''}]
+        
     ],
 ];
-export const BLOCK_WIDTH = 20;
-export const BLOCK_HEIGHT = 20;
-export const BOARD_WIDTH = 12;
-export const BOARD_HEIGHT = 18;
+export const BLOCK_WIDTH = 40;
+export const BLOCK_HEIGHT = 40;
+export const BOARD_WIDTH = 10;
+export const BOARD_HEIGHT = 20;
+export const DETALLES = false;
