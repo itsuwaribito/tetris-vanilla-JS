@@ -37,9 +37,7 @@ function draw() {
                 gameOver();
                 return;
             }
-            if(Piece.dir === 'ArrowDown') {
-                setPuntaje(Board.setToBoard(Piece));
-            }
+            setPuntaje(Board.setToBoard(Piece));
         }
         timer = 0;
     }
@@ -75,11 +73,14 @@ document.addEventListener('keydown', (event) => {
     lastUserMove = event.code;
     Piece.move(event.code)
     if(Board.boundaries(Piece)) {
-        if(Piece.y === 0) {
+        
+        if(Piece.y === 0 && Piece.dir === 'ArrowDown') {
             gameOver();
             return;
         }
-        setPuntaje(Board.setToBoard(Piece));
+        if(Piece.dir === 'ArrowDown') {
+            setPuntaje(Board.setToBoard(Piece));
+        }
     }
 });
 
